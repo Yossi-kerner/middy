@@ -1,7 +1,7 @@
 import {
   Context as LambdaContext,
   Handler as LambdaHandler
-} from 'aws-lambda'
+} from 'aws-lambda/handler'
 
 declare type PluginHook = () => void
 declare type PluginHookWithMiddlewareName = (middlewareName: string) => void
